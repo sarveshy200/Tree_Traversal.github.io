@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Binary Tree Traversal</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="top-nav">
+  <a class="logo" href="">Tree Traversal</a>
+
+</nav>
+<p id='desc'><center>Here Binary Tree representation is achieved by a simple array, using it in the form of ([root, left_child, right_child])
+</center></p>
+
+<p><center>For example, array = [1,[2,4,5], [3,"x","y"]] will be shown like this in the tree view:</center></p>
+
+<canvas id="myCanvas" width="650px" height="180px"></canvas> 
+<div class="Button">   
+  <button class="css_button" type="button" onclick="window.preOrder()">Preorder</button>
+  <button class="css_button" type="button" onclick="window.inOrder()">Inorder</button>
+  <button class="css_button" type="button" onclick="window.postOrder()">Postorder</button>
+  </div>
+  
+    
+    
+			<div class="mybox warning">
+				<div class="mybox-content">
+          <h4>Preorder</h4>
+					<p>
+						Until all nodes are traversed − <br>
+Step 1 − Visit root node.<br>
+Step 2 − Recursively traverse left subtree.<br>
+Step 3 − Recursively traverse right subtree.
+					</p>
+				</div>
+			</div>
+
+			<div class="mybox info">
+				<div class="mybox-content">
+          <h4>Inorder</h4>
+					<p>
+						Until all nodes are traversed −<br>
+Step 1 − Recursively traverse left subtree.<br>
+Step 2 − Visit root node.<br>
+Step 3 − Recursively traverse right subtree.
+					</p>
+				</div>
+			</div>
+
+			<div class="mybox success">
+				<div class="mybox-content">
+          <h4>Postorder</h4>
+					<p>
+						Until all nodes are traversed −<br>
+Step 1 − Recursively traverse left subtree.<br>
+Step 2 − Recursively traverse right subtree.<br>
+Step 3 − Visit root node.
+					</p>
+				</div>
+			</div>
+<div class="container">
+<div class="Traversal">		
+<div class="right-aligned">
+  <p>Preorder Traversal:</p>
+</div>
+<div class="left-aligned">
+<p id="preorder"> No attempt</p>  
+</div>
+<br><br><br>
+
+<div class="right-aligned">
+  <p>Inorder Traversal:</p>
+</div>
+<div class="left-aligned">
+<p id="inorder"> No attempt</p>
+</div>
+<br><br><br>
+
+<div class="right-aligned">
+  <p>Postorder Traversal:</p>
+</div>
+<div class="left-aligned">
+  <p id="postorder"> No attempt</p>
+</div>  
+
+<br>
+
+<br><br><br>
+<div class="Button2">
+<p><center>Now, you can try your own tree: </center></p>
+
+<center><input class="textbox" type="text" id="expression" value='[1, [2, 4, 5], [3, "x", "y"] ]'></center>
+
+<center><button class="css_button" type="button" onclick="window.evaluate()">Evaluate</button></center></div>
+</div>
+</div>
+
+<footer>
+  <div class="main-content">
+    <div class="social-container">    
+      </div>
+      </div>
+      <center><h3>Designed By</h3></center>
+  <p class="copyright">Sarvesh Kumar Yadav(22MCA10097),Suryakant Panda(22MCA10095),Neeraj Kumar Tiwari(22MCA10026),Avinash Grover</p>
+  <h3>Copyright © 2022 TreeTraversal All Rigmts Reserved</h3>
+
+
+</footer>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.18/paper-full.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
